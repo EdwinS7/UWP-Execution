@@ -24,9 +24,13 @@
 *.lai
 *.la
 *.a
-*.lib
 
 # Executables
 *.exe
 *.out
 *.app
+*.pdb
+*.idb
+/.vs/
+/release/
+/debug/

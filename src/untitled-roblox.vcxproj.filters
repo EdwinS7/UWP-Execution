@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="third-party\LuaU\src\lapi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\laux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\lbaselib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\lbitlib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\lbuiltins.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\lcorolib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\ldblib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\ldebug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\ldo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\lfunc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\lgc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\lgcdebug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\linit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\lmathlib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\lmem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\lnumprint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\lobject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\loslib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\lperf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\lstate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\lstring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\lstrlib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\ltable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\ltablib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\ltm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\ludata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\lutf8lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\lvmexecute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\lvmload.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\LuaU\src\lvmutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\hooks\hooks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\bridge\bridge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\context\context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\memory\memory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\scheduler\functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\scheduler\scheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\serializer\serializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\utilities\utilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="third-party\xorstr.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hooks\hooks.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\inc\lua.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\inc\luaconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\inc\lualib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\src\lapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\src\lbuiltins.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\src\lbytecode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\src\lcommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\src\ldebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\src\ldo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\src\lfunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\src\lgc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\src\lmem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\src\lnumutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\src\lobject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\src\lstate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\src\lstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\src\ltable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\src\ltm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\src\ludata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\LuaU\src\lvm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\Luau\src\Bytecode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\Luau\src\BytecodeBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\Luau\src\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\Luau\src\Compiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\Luau\src\Confusables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\Luau\src\DenseHash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\Luau\src\ExperimentalFlags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\Luau\src\Location.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\Luau\src\luacode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\Luau\src\ParseOptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\Luau\src\StringUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\XXHash\src\xxhash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\ZStd\inc\zstd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\MinHook\MinHook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bridge\bridge.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\context\context.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\memory\memory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\scheduler\scheduler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\serializer\serializer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utilities\defines.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utilities\utilities.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="third-party\Luau\lib\Luau.lib" />
+  </ItemGroup>
+</Project>

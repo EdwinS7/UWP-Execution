@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{502A3AA2-CCF3-4691-A194-FCB71D3518AD}</ProjectGuid>
+    <RootNamespace>untitledroblox</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\$(ProjectName)\output</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(ProjectName)\others</IntDir>
+    <LibraryPath>$(ProjectDir)third-party\MinHook\Lib;$(ProjectDir)third-party\ZStd\lib;$(ProjectDir)third-party\LuaU\compiler\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\$(ProjectName)\output\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(ProjectName)\others\</IntDir>
+    <LibraryPath>$(ProjectDir)third-party\MinHook\Lib\;$(ProjectDir)third-party\ZStd\lib\;$(ProjectDir)third-party\LuaU\lib\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)\$(ProjectName)\output</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(ProjectName)\others</IntDir>
+    <LibraryPath>$(ProjectDir)third-party\MinHook\Lib;$(ProjectDir)third-party\ZStd\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)\$(ProjectName)\output</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(ProjectName)\others</IntDir>
+    <LibraryPath>$(ProjectDir)third-party\MinHook\Lib;$(ProjectDir)third-party\ZStd\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;UNTITLEDROBLOX_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>MinHook_Debug.lib;zstd_static.lib;LuaU.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;UNTITLEDROBLOX_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>MinHook_Release.lib;zstd_static.lib;LuaU.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;UNTITLEDROBLOX_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;UNTITLEDROBLOX_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="include\bridge\bridge.cpp" />
+    <ClCompile Include="include\context\context.cpp" />
+    <ClCompile Include="include\hooks\hooks.cpp" />
+    <ClCompile Include="include\memory\memory.cpp" />
+    <ClCompile Include="include\scheduler\functions.cpp" />
+    <ClCompile Include="include\scheduler\scheduler.cpp" />
+    <ClCompile Include="include\serializer\serializer.cpp" />
+    <ClCompile Include="include\utilities\utilities.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lapi.cpp" />
+    <ClCompile Include="third-party\LuaU\src\laux.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lbaselib.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lbitlib.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lbuiltins.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lcorolib.cpp" />
+    <ClCompile Include="third-party\LuaU\src\ldblib.cpp" />
+    <ClCompile Include="third-party\LuaU\src\ldebug.cpp" />
+    <ClCompile Include="third-party\LuaU\src\ldo.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lfunc.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lgc.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lgcdebug.cpp" />
+    <ClCompile Include="third-party\LuaU\src\linit.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lmathlib.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lmem.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lnumprint.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lobject.cpp" />
+    <ClCompile Include="third-party\LuaU\src\loslib.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lperf.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lstate.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lstring.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lstrlib.cpp" />
+    <ClCompile Include="third-party\LuaU\src\ltable.cpp" />
+    <ClCompile Include="third-party\LuaU\src\ltablib.cpp" />
+    <ClCompile Include="third-party\LuaU\src\ltm.cpp" />
+    <ClCompile Include="third-party\LuaU\src\ludata.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lutf8lib.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lvmexecute.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lvmload.cpp" />
+    <ClCompile Include="third-party\LuaU\src\lvmutils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\bridge\bridge.hpp" />
+    <ClInclude Include="include\context\context.hpp" />
+    <ClInclude Include="include\hooks\hooks.hpp" />
+    <ClInclude Include="common.hpp" />
+    <ClInclude Include="include\memory\memory.hpp" />
+    <ClInclude Include="include\scheduler\scheduler.hpp" />
+    <ClInclude Include="include\serializer\serializer.hpp" />
+    <ClInclude Include="include\utilities\defines.hpp" />
+    <ClInclude Include="include\utilities\utilities.hpp" />
+    <ClInclude Include="third-party\Luau\src\BytecodeBuilder.h" />
+    <ClInclude Include="third-party\Luau\src\Compiler.h" />
+    <ClInclude Include="third-party\Luau\src\Confusables.h" />
+    <ClInclude Include="third-party\Luau\src\DenseHash.h" />
+    <ClInclude Include="third-party\Luau\src\ExperimentalFlags.h" />
+    <ClInclude Include="third-party\Luau\src\Location.h" />
+    <ClInclude Include="third-party\Luau\src\luacode.h" />
+    <ClInclude Include="third-party\Luau\src\ParseOptions.h" />
+    <ClInclude Include="third-party\Luau\src\StringUtils.h" />
+    <ClInclude Include="third-party\LuaU\inc\lua.h" />
+    <ClInclude Include="third-party\LuaU\inc\luaconf.h" />
+    <ClInclude Include="third-party\LuaU\inc\lualib.h" />
+    <ClInclude Include="third-party\LuaU\src\lapi.h" />
+    <ClInclude Include="third-party\LuaU\src\lbuiltins.h" />
+    <ClInclude Include="third-party\LuaU\src\lbytecode.h" />
+    <ClInclude Include="third-party\LuaU\src\lcommon.h" />
+    <ClInclude Include="third-party\LuaU\src\ldebug.h" />
+    <ClInclude Include="third-party\LuaU\src\ldo.h" />
+    <ClInclude Include="third-party\LuaU\src\lfunc.h" />
+    <ClInclude Include="third-party\LuaU\src\lgc.h" />
+    <ClInclude Include="third-party\LuaU\src\lmem.h" />
+    <ClInclude Include="third-party\LuaU\src\lnumutils.h" />
+    <ClInclude Include="third-party\LuaU\src\lobject.h" />
+    <ClInclude Include="third-party\LuaU\src\lstate.h" />
+    <ClInclude Include="third-party\LuaU\src\lstring.h" />
+    <ClInclude Include="third-party\LuaU\src\ltable.h" />
+    <ClInclude Include="third-party\LuaU\src\ltm.h" />
+    <ClInclude Include="third-party\LuaU\src\ludata.h" />
+    <ClInclude Include="third-party\LuaU\src\lvm.h" />
+    <ClInclude Include="third-party\MinHook\MinHook.h" />
+    <ClInclude Include="third-party\xorstr.hpp" />
+    <ClInclude Include="third-party\XXHash\src\xxhash.h" />
+    <ClInclude Include="third-party\ZStd\inc\zstd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="third-party\Luau\lib\Luau.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
